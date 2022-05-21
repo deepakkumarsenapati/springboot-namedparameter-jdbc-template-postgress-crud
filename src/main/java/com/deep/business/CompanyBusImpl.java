@@ -15,8 +15,28 @@ public class CompanyBusImpl implements CompanyBus {
 	private CompanyDao dao;
 
 	@Override
-	public List<Company> getCompany() {
-		return dao.getCompany();
+	public List<Company> getAllCompany() {
+		return dao.getAllCompany();
+	}
+
+	@Override
+	public Company getCompanyById(int id) {
+		return dao.getCompanyById(id);
+	}
+
+	@Override
+	public int insertCompany(Company comp) {
+		return dao.insertCompany(comp);
+	}
+
+	@Override
+	public int updateCompany(Company comp) {
+		return dao.updateCompany(comp);
+	}
+
+	@Override
+	public int deleteCompanyById(int id) {
+		return dao.deleteCompanyById(id);
 	}
 
 }

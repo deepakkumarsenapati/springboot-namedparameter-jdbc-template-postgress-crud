@@ -6,6 +6,14 @@ import com.deep.models.Company;
 
 public interface CompanyDao {
 
-	public List<Company> getCompany();
+	public List<Company> getAllCompany();
+
+	public Company getCompanyById(int id);
+
+	public int insertCompany(Company comp);
+
+	public int updateCompany(Company comp);
+
+	public int deleteCompanyById(int id);
 
 }
