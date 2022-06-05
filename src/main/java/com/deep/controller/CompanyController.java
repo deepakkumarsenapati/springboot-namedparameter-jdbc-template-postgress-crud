@@ -22,7 +22,7 @@ public class CompanyController {
 
 	@GetMapping("/")
 	public String defaultMapping() {
-		return "Welcome to spring boot app!!";
+		return "Welcome to spring boot app!";
 	}
 
 	@GetMapping("company")
